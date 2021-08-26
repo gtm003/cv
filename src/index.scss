@@ -1,0 +1,6 @@
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+@import "./styles/vars";
+@import "./styles/mixins";
+
+@import "./materialize-src/sass/materialize.scss";
+@import "./main/main.scss";
