@@ -98,26 +98,26 @@ export default function CV() {
           </div>
           <div className = 'subsections-title'>Courses</div>
           <div className = 'subsections-content'>
-            <p>Rolling Scope School. <a href="/assets/tips.png">Javascript/Front-end</a> and <a href="/assets/tips.png">React.</a></p>
+            <p>Rolling Scope School. <a href="https://rs.school/js/">Javascript/Front-end</a> and <a href="https://rs.school/react/">React.</a></p>
             <p>On the Javascript / Front-end course, I learned HTML, JS and SCSS, learned how to work with the Gulp and WebPack compilers, and gained experience with GitHub.</p>
             <p>On the React course, I gained experience in creating UI using the specified library and initial experience in programming in TypeScript</p>
           </div>
           <div className = 'subsections-title'>Projects</div>
           <div className = 'subsections-content'>
             <p className='marginBottom'>
-              <a href="/assets/tips.png">SVG-editor. </a>
+              <a href="https://github.com/alexk08/rsclone/pull/94">SVG-editor. </a>
               This is teamwork, the final task of the Javascript / Front-end course. The project uses the MVC pattern. The bulk of my work on this project is the model methods responsible for creating and editing elements on the canvas.</p>
             <p className='marginBottom'>
-              <a href="/assets/tips.png">Einstein's puzzle. </a>
+              <a href="https://github.com/gtm003/react-game/pull/2">Einstein's puzzle. </a>
               This is an individual project, the first assignment from the React course. In this project, a rather complex game logic has been implemented and basic knowledge of the React library has been obtained.</p>
             <p>
-              <a href="/assets/tips.png">React. RS Lang. </a>
+              <a href="https://github.com/alexk08/rslang/pull/42">React. RS Lang. </a>
               This is the final team project, in which I learned to write in TypeScript, got experience with Redux, React Route. My part in this project is the Sprint and Word Constructor games, statistics page.</p>
           </div>
           <div className = 'subsections-title'>Certificates</div>
           <div className = 'subsections-content'>
-            <p>RS School. Javascript/Front-end</p>
-            <p>RS School. React</p>
+            <p><a href="https://app.rs.school/certificate/64gfe4vu">RS School. Javascript/Front-end</a></p>
+            <p><a href="https://app.rs.school/certificate/xp7c36nv">RS School. React</a></p>
           </div>
         </div>
       </div>
