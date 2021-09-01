@@ -1,4 +1,5 @@
 import React from 'react';
+import SelectLang from '../components/select/select';
 //import {Link} from "react-router-dom";
 //import './main.scss';
 //import '../assets/test.txt'
@@ -30,8 +31,6 @@ export default function CV() {
   return (
     <main className='main'>
       <div className='section-left'>
-        <i className="material-icons icon-close">close</i>
-        <i className="material-icons icon-menu">menu</i>
         <img className='foto' src="https://i.postimg.cc/7P7GbsL3/image.jpg" alt="foto"/>
         <div className='title'>Grigorovich Tatyana</div>
         <div className='subtitle'>Junior Frontend Developer</div>
@@ -76,18 +75,7 @@ export default function CV() {
         </div>
       </div>
       <div className='section-right'>
-        <header>
-          <a href="/assets/tips.png" download="text">Download</a>
-          <div class="input-field col s12">
-            <select>
-              <option value="" disabled selected>Choose your option</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
-            </select>
-          <label>Materialize Select</label>
-          </div>
-        </header>
+        <SelectLang/>
         <h3>Grigorovich Tatyana</h3>
         <h4>Junior Frontend Developer</h4>
         <div className = 'subsections'>
@@ -121,14 +109,12 @@ export default function CV() {
           </div>
         </div>
       </div>
-
 </main>
   )
 }
 //      <Link to="/assets/tips.png" target="_blank" download>Download1</Link>
 function Value ({value, max}) {
   const arr = new Array(5).fill(null);
-  console.log(value);
   return (
     <div className='value'>
       {
@@ -136,8 +122,6 @@ function Value ({value, max}) {
           function color(value) {
             return index < value ? '#24efc2' : '#454a55';
           }
-          console.log(`index: ${index} - value: ${value}`)
-          console.log(color(value))
           const circleStyle = {
             background: color(value)
           }

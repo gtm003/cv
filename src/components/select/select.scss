@@ -1,0 +1,32 @@
+.select-wrapper {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 120px;
+  .select-list {
+    margin: 0;
+  }
+  .hidden {
+    display: none;
+    margin: 0;
+  }
+  .select-options {
+    border-bottom: mediumseagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 0.5rem;
+    font-size: 1rem;
+    &:hover {
+      background: rgba(168, 7, 7, 0.25);
+      cursor: pointer;
+    }
+    &.hidden {
+      display:none
+    }
+    .flag {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
