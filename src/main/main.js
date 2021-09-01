@@ -43,8 +43,8 @@ export default function CV() {
       </div>
       <div className='section-right'>
         <SelectLang/>
-        <h3>{NAME[currentLang]}</h3>
-        <h4>{POSITION[currentLang]}</h4>
+        <p className = 'title'>{NAME[currentLang]}</p>
+        <p className = 'subtitle'>{POSITION[currentLang]}</p>
         <div className = 'subsections'>
           <div className = 'subsections-title'>{DESCRIPTION[currentLang].title}</div>
           <div className = 'subsections-content'>{DESCRIPTION[currentLang].text}</div>
