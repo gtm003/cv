@@ -19,16 +19,6 @@
     padding-top: 2rem;
     padding-left: 2.5rem;
     padding-bottom: 1rem;
-    .foto {
-      display: none;
-      width: 120px;
-      //height: 120px;
-      border-radius: 50%;
-      margin-left: 2rem;
-      @media (min-width: $tablet-width) {
-        display: block;
-      }
-    }
     .name {
       margin-top: 2rem;
       font-size: 2rem;
@@ -108,7 +98,6 @@
         align-items:flex-start;
       }
       &-title {
-        //width: 150px;
         text-align: left;
         font-size: 1.2rem;
         font-weight: bold;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Contacts } from '../components/contacts/contacts';
+import { Foto } from '../components/foto/foto';
 import { SelectLang } from '../components/select/selectLang';
 import { COURSES, DESCRIPTION, NAME, POSITION, PROJECTS, SKILLS } from '../data/constants';
 //import {Link} from "react-router-dom";
@@ -11,7 +12,7 @@ export default function CV() {
   return (
     <main className='main'>
       <div className='section-left'>
-        <img className='foto' src="https://i.postimg.cc/7P7GbsL3/image.jpg" alt="foto"/>
+        <Foto />
         <div className='name'>{NAME[currentLang]}</div>
         <div className='position'>{POSITION[currentLang]}</div>
         <Contacts />
