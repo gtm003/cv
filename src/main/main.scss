@@ -1,30 +1,24 @@
 .main {
-  //border: 1px solid black;
   position: absolute;
   top: 0;
   right: 0;
-  //bottom: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
-  //flex-wrap: wrap;
-
-  //width: 100vw;
-  //height: 100vh;
-  //margin: 1rem auto 0;
   .section-left {
-    background: #282c34;
-    color: #cac9c7;
+    background: $default-color;
+    color: $disabled-color;
     min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    padding-top: 32px;
-    padding-left: 50px;
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
     .foto {
       display: none;
       width: 120px;
@@ -35,14 +29,14 @@
         display: block;
       }
     }
-    .title {
+    .name {
       margin-top: 2rem;
       font-size: 2rem;
       @media (min-width: $tablet-width) {
         font-size: 1.6rem;
       }
     }
-    .subtitle {
+    .position {
       font-size: 1.5rem;
       @media (min-width: $tablet-width) {
         font-size: 1.2rem;
@@ -55,7 +49,7 @@
       flex-direction: column;
       align-items:flex-start;
       .title {
-        border-bottom: 2px solid #24efc2;
+        border-bottom: 2px solid $green-color;
         width: 200px;
         text-align: left;
       }
@@ -64,9 +58,6 @@
         width: 200px;
         justify-content: space-between;
         align-items: center;
-        //.subtitle {
-
-        //}
         .value {
           display: flex;
           width: 70px;
@@ -84,14 +75,15 @@
   }
 
   .section-right {
-    background: #cac9c7;
-    color: rgb(40, 44, 52);
-    //width: calc(100vw - 400px);
+    background: $disabled-color;
+    color: $default-color;
     width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     .title {
       display: none;
       font-size: 3rem;
-      margin: 0.5rem;
+      margin: 2rem 0.5rem 0.5rem ;
       @media (min-width: $tablet-width) {
         display: block;
       }
@@ -120,12 +112,18 @@
         text-align: left;
         font-size: 1.2rem;
         font-weight: bold;
-        padding: 1.5rem;
+        padding-top: 1.5rem;
+        @media (min-width: $tablet-width) {
+          padding: 1.5rem;
+        }        
       }
       &-content {
         text-align: left;
         font-size: 1.2rem;
-        padding: 1.5rem 1.5rem 0rem 0rem;
+        padding-right: 1.5rem;
+        @media (min-width: $tablet-width) {
+          padding: 1.5rem 1.5rem 0rem 0rem;
+        }        
       } 
     }
   }

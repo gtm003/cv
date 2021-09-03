@@ -7,11 +7,19 @@
   @media (min-width: $tablet-width) {
     color: $default-color;
   }
+  #select-arrow {
+    fill: $disabled-color;
+    @media (min-width: $tablet-width) {
+      fill: $default-color;
+    }
+  }
   .select-list {
     margin: 0;
     background: $default-color;
+    color: $disabled-color;
     @media (min-width: $tablet-width) {
-      color: $disabled-color;
+      background: $disabled-color;
+      color: $default-color;
     }
   }
   .hidden {

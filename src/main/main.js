@@ -12,8 +12,8 @@ export default function CV() {
     <main className='main'>
       <div className='section-left'>
         <img className='foto' src="https://i.postimg.cc/7P7GbsL3/image.jpg" alt="foto"/>
-        <div className='title'>{NAME[currentLang]}</div>
-        <div className='subtitle'>{POSITION[currentLang]}</div>
+        <div className='name'>{NAME[currentLang]}</div>
+        <div className='position'>{POSITION[currentLang]}</div>
         <Contacts />
         <div className='subsection'>
           <div className='title'>
@@ -88,7 +88,7 @@ function Value ({value, max}) {
       {
         arr.map((item, index) => {
           function color(value) {
-            return index < value ? '#24efc2' : '#454a55';
+            return index < value ? '#33ccaa' : '#454a55';
           }
           const circleStyle = {
             background: color(value)

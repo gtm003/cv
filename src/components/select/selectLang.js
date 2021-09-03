@@ -25,7 +25,7 @@ function SelectLang() {
           </svg>
         </div>
         <svg viewBox="0 0 32 32" height="100%"> 
-          <use xlinkHref = "#select-arrow"/>
+          <use xlinkHref = "#select-arrow" className = "arrow"/>
         </svg>
       </div>
 
