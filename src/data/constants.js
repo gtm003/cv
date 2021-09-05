@@ -116,7 +116,7 @@ const PROJECTS = {
     {
       title: "Einstein's puzzle.",
       text: "This is an individual project, the first assignment from the React course. In this project, a rather complex game logic has been implemented and basic knowledge of the React library has been obtained.",
-      GHLink: "",
+      GHLink: "https://github.com/gtm003/react-game",
       deployLink: "",
     },
     {
@@ -128,7 +128,7 @@ const PROJECTS = {
   ],
   GB: [
     {
-      title: "SVG-редактор.",
+      title: "SVG-editor.",
       text: "This is teamwork, the final task of the Javascript / Front-end course. The project uses the MVC pattern. The bulk of my work on this project is the model methods responsible for creating and editing elements on the canvas.",
       GHLink: "https://github.com/gtm003/rsclone",
       deployLink: "https://alexk08.github.io/rsclone/client/build/",
