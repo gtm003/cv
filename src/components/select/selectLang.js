@@ -1,17 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import { LANGS } from '../../data/constants';
 import Icons from '../../data/icons';
+import {onChangeLang} from '../../store/actionCreators/changeLang';
 
-function SelectLang() {
-  const [currentLang, setCurentLang] = useState('GB');
+const SelectLangRedux = ({ currentLang, onChangeLangSecond }) => {
 
   function OnToggleSelect() {
     const ul = document.querySelector('ul');
     ul.classList.toggle('hidden');
   }
 
-  function OnChangeLang(e) {
-    setCurentLang(e);
+  function onChangeLang(e) {
+    onChangeLangSecond(e);
     OnToggleSelect();
   }
 
@@ -32,7 +33,7 @@ function SelectLang() {
       <ul className="select-list hidden">
         {
           LANGS.map((item) => (
-            <li className="select-options" key = {item.id} onClick = {(e)=> OnChangeLang(item.id)}>
+            <li className="select-options" key = {item.id} onClick = {(e)=> onChangeLang(item.id)}>
               <span>{item.title}</span>
               <div className="flag">
                 <svg height="100%"> 
@@ -47,5 +48,17 @@ function SelectLang() {
     </div>
   )
 }
+
+const mapStateToProps = (state) => ({
+  currentLang: state.currentLang,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  onChangeLangSecond: (currentLang) => {
+    dispatch(onChangeLang(currentLang));
+  },
+});
+
+const SelectLang = connect(mapStateToProps, mapDispatchToProps)(SelectLangRedux);
 
 export { SelectLang };

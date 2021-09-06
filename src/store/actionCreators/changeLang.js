@@ -1,10 +1,10 @@
 import CHANGE_LANG from '../actions/changeLang';
 
-function CHANGE_LANG(value) {
+const onChangeLang = (currentLang) => {
 	return {
 		type: CHANGE_LANG,
-		currentLang: value
-	};
+		payload: currentLang
+	};  
 }
 
-export default CHANGE_LANG;
+export { onChangeLang };

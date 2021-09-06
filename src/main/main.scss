@@ -141,3 +141,7 @@ a {
     color: rgb(83, 6, 102);
   }
 }
+
+body {
+  -webkit-print-color-adjust: exact !important;
+}

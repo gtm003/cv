@@ -1,9 +1,8 @@
-import CHANGE_LANG from '../actions/changeLang';
 import initialState from '../initialState';
 
-export default function currentLang(state = initialState.currentLang, action) {
+export default function onChangeLang(state = initialState.currentLang, action) {
     switch(action.type) {
-        case CHANGE_LANG: return action.currentLang;
+        case 'CHANGE_LANG': return action.payload;
         
         default: return state;
     }
