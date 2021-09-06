@@ -84,6 +84,11 @@ const COURSES = {
     GB: 'Courses',
     IL: "קורסים"
   },
+  certificatesTitle: {
+    RU: "Сертификаты",
+    GB: "Certificates",
+    IL: "תעודות"
+  },
   list: [
     {
       title: "Front-End/JavaScript. RS School.",
@@ -106,66 +111,50 @@ const PROJECTS = {
     GB: "Projects",
     IL: "פרויקטים"
   },
-  RU: [
+  progects:  [
     {
-      title: "SVG-редактор.",
-      text: "This is teamwork, the final task of the Javascript / Front-end course. The project uses the MVC pattern. The bulk of my work on this project is the model methods responsible for creating and editing elements on the canvas.",
+      title: {
+        RU: "SVG-редактор.",
+        GB: "SVG-editor.",
+        IL: "עוֹרֵך-SVG.",
+      },
+      description: {
+        RU: " Это командная работа, последняя задача курса Javascript / Front-end. В проекте используется шаблон MVC. Основная часть моей работы над этим проектом - это методы модели, отвечающие за создание и редактирование элементов на холсте.",
+        GB: " This is teamwork, the final task of the Javascript / Front-end course. The project uses the MVC pattern. The bulk of my work on this project is the model methods responsible for creating and editing elements on the canvas.",
+        IL: " זו עבודת צוות, המשימה האחרונה של קורס Javascript / Front-end. הפרויקט משתמש בתבנית MVC. עיקר עבודתי בפרויקט זה הוא שיטות המודל האחראיות ליצירת ועריכת אלמנטים על הבד.",
+      },
       GHLink: "https://github.com/gtm003/rsclone",
       deployLink: "https://alexk08.github.io/rsclone/client/build/",
     },
     {
-      title: "Einstein's puzzle.",
-      text: "This is an individual project, the first assignment from the React course. In this project, a rather complex game logic has been implemented and basic knowledge of the React library has been obtained.",
-      GHLink: "https://github.com/gtm003/react-game",
-      deployLink: "",
-    },
-    {
-      title: "React. RS Lang.",
-      text: "This is the final team project, in which I learned to write in TypeScript, got experience with Redux, React Route. My part in this project is the Sprint and Word Constructor games, statistics page.",
-      GHLink: "https://github.com/gtm003/rslang",
-      deployLink: "https://rslang-team23-alexk08.netlify.app/",
-    },
-  ],
-  GB: [
-    {
-      title: "SVG-editor.",
-      text: "This is teamwork, the final task of the Javascript / Front-end course. The project uses the MVC pattern. The bulk of my work on this project is the model methods responsible for creating and editing elements on the canvas.",
+      title: {
+        RU: "Головоломка Энштейна.",
+        GB: "Einstein's puzzle.",
+        IL: "הפאזל של איינשטיין.",
+      },
+      description: {
+        RU: " Это индивидуальный проект, первое задание из курса React. В этом проекте реализована довольно сложная игровая логика и получены базовые знания библиотеки React.",
+        GB: " This is an individual project, the first assignment from the React course. In this project, a rather complex game logic has been implemented and basic knowledge of the React library has been obtained.",
+        IL: " זהו פרויקט אינדיבידואלי, המשימה הראשונה מתוך קורס React. בפרויקט זה יושמה היגיון משחק מורכב למדי והתקבל ידע בסיסי בספריית React.",
+      },
       GHLink: "https://github.com/gtm003/rsclone",
       deployLink: "https://alexk08.github.io/rsclone/client/build/",
     },
     {
-      title: "Einstein's puzzle.",
-      text: "This is an individual project, the first assignment from the React course. In this project, a rather complex game logic has been implemented and basic knowledge of the React library has been obtained.",
-      GHLink: "",
-      deployLink: "",
-    },
-    {
-      title: "React. RS Lang.",
-      text: "This is the final team project, in which I learned to write in TypeScript, got experience with Redux, React Route. My part in this project is the Sprint and Word Constructor games, statistics page.",
+      title: {
+        RU: "RSLang.",
+        GB: "RSLang.",
+        IL: "RSLang.",
+      },
+      description: {
+        RU: " Это индивидуальный проект, первое задание из курса React. В этом проекте реализована довольно сложная игровая логика и получены базовые знания библиотеки React.",
+        GB: " This is an individual project, the first assignment from the React course. In this project, a rather complex game logic has been implemented and basic knowledge of the React library has been obtained.",
+        IL: " זהו פרויקט אינדיבידואלי, המשימה הראשונה מתוך קורס React. בפרויקט זה יושמה היגיון משחק מורכב למדי והתקבל ידע בסיסי בספריית React.",
+      },
       GHLink: "https://github.com/gtm003/rslang",
       deployLink: "https://rslang-team23-alexk08.netlify.app/",
-    },
-  ],
-  IL: [
-    {
-      title: "SVG-редактор.",
-      text: "This is teamwork, the final task of the Javascript / Front-end course. The project uses the MVC pattern. The bulk of my work on this project is the model methods responsible for creating and editing elements on the canvas.",
-      GHLink: "https://github.com/gtm003/rsclone",
-      deployLink: "https://alexk08.github.io/rsclone/client/build/",
-    },
-    {
-      title: "Einstein's puzzle.",
-      text: "This is an individual project, the first assignment from the React course. In this project, a rather complex game logic has been implemented and basic knowledge of the React library has been obtained.",
-      GHLink: "",
-      deployLink: "",
-    },
-    {
-      title: "React. RS Lang.",
-      text: "This is the final team project, in which I learned to write in TypeScript, got experience with Redux, React Route. My part in this project is the Sprint and Word Constructor games, statistics page.",
-      GHLink: "https://github.com/gtm003/rslang",
-      deployLink: "https://rslang-team23-alexk08.netlify.app/",
-    },
-  ],
+    }
+  ]
 };
 
 export {LANGS, CONTACTS, SKILLS, NAME, POSITION, DESCRIPTION, COURSES, PROJECTS};

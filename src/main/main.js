@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Contacts } from '../components/contacts/contacts';
 import { Foto } from '../components/foto/foto';
 import { SelectLang } from '../components/select/selectLang';
@@ -7,8 +8,9 @@ import { COURSES, DESCRIPTION, NAME, POSITION, PROJECTS, SKILLS } from '../data/
 //import './main.scss';
 //import '../assets/test.txt'
 
-export default function CV() {
-  const currentLang = 'GB';
+const CVRedux = ({currentLang}) => {
+  //const currentLang = 'GB';
+  console.log(currentLang);
   return (
     <main className='main'>
       <div className='section-left'>
@@ -60,15 +62,15 @@ export default function CV() {
           <div className = 'subsections-title'>{PROJECTS.title[currentLang]}</div>
           <div className = 'subsections-content'>
             {
-              PROJECTS[currentLang].map((item) => (
-                <p className='marginBottom' key = {item.title}>
-                  <a href = {item.GHLink}>{item.title}</a>
-                  {item.text}
+              PROJECTS.progects.map((item) => (
+                <p className='marginBottom' key = {item.title.GB}>
+                  <a href = {item.GHLink}>{item.title[currentLang]}</a>
+                  {item.description[currentLang]}
                 </p>
               ))
             }
           </div>
-          <div className = 'subsections-title'>Certificates</div>
+          <div className = 'subsections-title'>{COURSES.certificatesTitle[currentLang]}</div>
           <div className = 'subsections-content'>
             {
               COURSES.list.map((item) => (
@@ -100,3 +102,11 @@ function Value ({value, max}) {
     </div>
   )
 }
+
+const mapStateToProps = (state) => ({
+  currentLang: state.currentLang,
+});
+
+const CV = connect(mapStateToProps)(CVRedux);
+
+export { CV };

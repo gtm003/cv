@@ -1,6 +1,6 @@
 import './App.css';
-import CV from './main/main';
-import {connect} from 'react-redux';
+import { CV } from './main/main';
+import { connect } from 'react-redux';
 
 function AppRedux(state) {
   //console.log(state.currentLang);
