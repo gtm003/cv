@@ -55,7 +55,7 @@ const CVRedux = ({currentLang}) => {
           <div className = 'subsections-content'>
             {
               COURSES.list.map((item) => (
-                <p key = {item.title}><a href = {item.courseLink}>{item.title}</a>{item.courseDescripe}</p>
+                <p key = {item.title}><a href = {item.courseLink}>{item.title}</a>{item.courseDescripe[currentLang]}</p>
               ))
             }
           </div>

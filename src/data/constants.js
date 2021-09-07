@@ -93,13 +93,23 @@ const COURSES = {
     {
       title: "Front-End/JavaScript. RS School.",
       courseLink: "https://rs.school/js/",
-      courseDescripe: " On the Javascript / Front-end course, I learned HTML, JS and SCSS, learned how to work with the Gulp and WebPack compilers, and gained experience with GitHub.",
+      courseDescripe:
+      {
+        RU: " На курсе Javascript / Front-end я изучила HTML, JS и SCSS, научилась работать с упаковщиками Gulp и WebPack и приобрела опыт работы с GitHub.",
+        GB: " On the Javascript / Front-end course, I learned HTML, JS and SCSS, learned how to work with the Gulp and WebPack compilers, and gained experience with GitHub.",
+        IL: " בקורס Javascript / Front-end למדתי HTML, JS ו- SCSS, למדתי איך לעבוד עם מהדרי Gulp ו- WebPack וצברתי ניסיון עם GitHub.",
+      },
       certificateLink: "https://app.rs.school/certificate/64gfe4vu",
     },
     {
       title: "React. RS School.",
       courseLink: "https://rs.school/react/",
-      courseDescripe: " On the React course, I gained experience in creating UI using the specified library and initial experience in programming in TypeScript",
+      courseDescripe: 
+      {
+        RU: " На курсе React я получила опыт создания пользовательского интерфейса с использованием указанной библиотеки и начальный опыт программирования на TypeScript.",
+        GB: " On the React course, I gained experience in creating UI using the specified library and initial experience in programming in TypeScript.",
+        IL: " בקורס React צברתי ניסיון ביצירת ממשק משתמש באמצעות הספרייה שצוינה וניסיון ראשוני בתכנות ב- TypeScript",
+      },
       certificateLink: "https://app.rs.school/certificate/xp7c36nv",
     },
   ]
@@ -137,8 +147,8 @@ const PROJECTS = {
         GB: " This is an individual project, the first assignment from the React course. In this project, a rather complex game logic has been implemented and basic knowledge of the React library has been obtained.",
         IL: " זהו פרויקט אינדיבידואלי, המשימה הראשונה מתוך קורס React. בפרויקט זה יושמה היגיון משחק מורכב למדי והתקבל ידע בסיסי בספריית React.",
       },
-      GHLink: "https://github.com/gtm003/rsclone",
-      deployLink: "https://alexk08.github.io/rsclone/client/build/",
+      GHLink: "https://github.com/gtm003/react-game",
+      deployLink: "https://gtm003.github.io/react-game/",
     },
     {
       title: {
