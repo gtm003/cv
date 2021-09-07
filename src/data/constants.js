@@ -134,7 +134,7 @@ const PROJECTS = {
         IL: " זו עבודת צוות, המשימה האחרונה של קורס Javascript / Front-end. הפרויקט משתמש בתבנית MVC. עיקר עבודתי בפרויקט זה הוא שיטות המודל האחראיות ליצירת ועריכת אלמנטים על הבד.",
       },
       GHLink: "https://github.com/gtm003/rsclone",
-      deployLink: "https://alexk08.github.io/rsclone/client/build/",
+      deployLink: "https://gtm003.github.io/rsclone/",
     },
     {
       title: {
@@ -143,9 +143,9 @@ const PROJECTS = {
         IL: "הפאזל של איינשטיין.",
       },
       description: {
-        RU: " Это индивидуальный проект, первое задание из курса React. В этом проекте реализована довольно сложная игровая логика и получены базовые знания библиотеки React.",
-        GB: " This is an individual project, the first assignment from the React course. In this project, a rather complex game logic has been implemented and basic knowledge of the React library has been obtained.",
-        IL: " זהו פרויקט אינדיבידואלי, המשימה הראשונה מתוך קורס React. בפרויקט זה יושמה היגיון משחק מורכב למדי והתקבל ידע בסיסי בספריית React.",
+        RU: " Это последний командный проект. В я попробовала писать на TypeScript, получила опыт работы с Redux и React Route. Мое участие в этом проекте - игры Sprint и Word Constructor, страница статистики.",
+        GB: " This is the final team project, in which I learned to write in TypeScript, got experience with Redux, React Route. My part in this project is the Sprint and Word Constructor games, statistics page.",
+        IL: " זהו פרויקט הצוות האחרון, בו למדתי לכתוב ב- TypeScript, קיבלתי ניסיון עם Redux, React Route. החלק שלי בפרויקט זה הוא דף משחקים, ספרינט ובונה, סטטיסטיקות.",
       },
       GHLink: "https://github.com/gtm003/react-game",
       deployLink: "https://gtm003.github.io/react-game/",
@@ -162,7 +162,7 @@ const PROJECTS = {
         IL: " זהו פרויקט אינדיבידואלי, המשימה הראשונה מתוך קורס React. בפרויקט זה יושמה היגיון משחק מורכב למדי והתקבל ידע בסיסי בספריית React.",
       },
       GHLink: "https://github.com/gtm003/rslang",
-      deployLink: "https://rslang-team23-alexk08.netlify.app/",
+      deployLink: "https://gtm003.github.io/rslang/",
     }
   ]
 };
