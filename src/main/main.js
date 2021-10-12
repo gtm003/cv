@@ -11,6 +11,7 @@ import { COURSES, DESCRIPTION, NAME, POSITION, PROJECTS, SKILLS } from '../data/
 const CVRedux = ({currentLang}) => {
   //const currentLang = 'GB';
   console.log(currentLang);
+  const subsectionClasses = currentLang === 'IL'? 'subsections hebrew' : 'subsections';
   return (
     <main className='main'>
       <div className='section-left'>
@@ -48,9 +49,11 @@ const CVRedux = ({currentLang}) => {
         <SelectLang/>
         <p className = 'title'>{NAME[currentLang]}</p>
         <p className = 'subtitle'>{POSITION[currentLang]}</p>
-        <div className = 'subsections'>
+        <div className = {`${subsectionClasses}`}>
           <div className = 'subsections-title'>{DESCRIPTION[currentLang].title}</div>
           <div className = 'subsections-content'>{DESCRIPTION[currentLang].text}</div>
+        </div>
+        <div className = {`${subsectionClasses}`}> 
           <div className = 'subsections-title'>{COURSES.title[currentLang]}</div>
           <div className = 'subsections-content'>
             {
@@ -59,6 +62,8 @@ const CVRedux = ({currentLang}) => {
               ))
             }
           </div>
+        </div>
+        <div className = {`${subsectionClasses}`}>  
           <div className = 'subsections-title'>{PROJECTS.title[currentLang]}</div>
           <div className = 'subsections-content'>
             {
@@ -70,6 +75,8 @@ const CVRedux = ({currentLang}) => {
               ))
             }
           </div>
+        </div>
+        <div className = {`${subsectionClasses}`}>
           <div className = 'subsections-title'>{COURSES.certificatesTitle[currentLang]}</div>
           <div className = 'subsections-content'>
             {
@@ -80,7 +87,7 @@ const CVRedux = ({currentLang}) => {
           </div>
         </div>
       </div>
-</main>
+    </main>
   )
 }
 

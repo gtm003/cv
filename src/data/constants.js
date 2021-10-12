@@ -34,8 +34,8 @@ const SKILLS = [
     value: '4',
   },
   {
-    subtitle: 'Types-cript',
-    value: '2',
+    subtitle: 'Type-script',
+    value: '1',
   },
   {
     subtitle: 'SCSS',
@@ -58,9 +58,9 @@ const NAME = {
 };
 
 const POSITION = {
-  RU: 'Фронтенд-разработчик',
-  GB: 'Front-end Developer',
-  IL: "מפתח חזיתי"
+  RU: 'Младший фронтенд-разработчик',
+  GB: 'Junior front-end Developer',
+  IL: "מפתח חזית ג'וניור"
 };
 
 const DESCRIPTION = {
@@ -133,7 +133,7 @@ const PROJECTS = {
         GB: " This is teamwork, the final task of the Javascript / Front-end course. The project uses the MVC pattern. The bulk of my work on this project is the model methods responsible for creating and editing elements on the canvas.",
         IL: " זו עבודת צוות, המשימה האחרונה של קורס Javascript / Front-end. הפרויקט משתמש בתבנית MVC. עיקר עבודתי בפרויקט זה הוא שיטות המודל האחראיות ליצירת ועריכת אלמנטים על הבד.",
       },
-      GHLink: "https://github.com/gtm003/rsclone",
+      GHLink: "https://github.com/gtm003/rsclone/blob/develop/README.md",
       deployLink: "https://gtm003.github.io/rsclone/",
     },
     {
@@ -147,7 +147,7 @@ const PROJECTS = {
         GB: " This is the final team project, in which I learned to write in TypeScript, got experience with Redux, React Route. My part in this project is the Sprint and Word Constructor games, statistics page.",
         IL: " זהו פרויקט הצוות האחרון, בו למדתי לכתוב ב- TypeScript, קיבלתי ניסיון עם Redux, React Route. החלק שלי בפרויקט זה הוא דף משחקים, ספרינט ובונה, סטטיסטיקות.",
       },
-      GHLink: "https://github.com/gtm003/react-game",
+      GHLink: "https://github.com/gtm003/react-game/blob/develop/README.md",
       deployLink: "https://gtm003.github.io/react-game/",
     },
     {
@@ -161,7 +161,7 @@ const PROJECTS = {
         GB: " This is an individual project, the first assignment from the React course. In this project, a rather complex game logic has been implemented and basic knowledge of the React library has been obtained.",
         IL: " זהו פרויקט אינדיבידואלי, המשימה הראשונה מתוך קורס React. בפרויקט זה יושמה היגיון משחק מורכב למדי והתקבל ידע בסיסי בספריית React.",
       },
-      GHLink: "https://github.com/gtm003/rslang",
+      GHLink: "https://github.com/gtm003/rslang/blob/develop/README.md",
       deployLink: "https://gtm003.github.io/rslang/",
     }
   ]

@@ -90,29 +90,46 @@
       flex-direction: column;
       padding-left: 1rem;
       @media (min-width: $tablet-width) {
-        display: grid;
-        grid-template-columns: 150px auto;
-        grid-template-rows: repeat(5, auto);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        align-items:flex-start;
+        flex-direction: row;
+        &.hebrew {
+          flex-direction: row-reverse;
+        }
+        //display: grid;
+        //grid-template-columns: 150px auto;
+        //grid-template-rows: repeat(5, auto);
+        //grid-column-gap: 0px;
+        //grid-row-gap: 0px;
+        //align-items:flex-start;
       }
       &-title {
+        width: 15%;
         text-align: left;
         font-size: 1.2rem;
         font-weight: bold;
         padding-top: 1.5rem;
-        @media (min-width: $tablet-width) {
+        @media (max-width: $desktop-width) {
           padding: 1.5rem;
-        }        
+          width: 30%;
+        }
+        @media (max-width: $tablet-width) {
+          padding: 0.5rem;
+          //width: 100%;
+          padding-bottom: 0;
+        }                
       }
       &-content {
+        width: 80%;
         text-align: left;
         font-size: 1.2rem;
-        padding-right: 1.5rem;
-        @media (min-width: $tablet-width) {
-          padding: 1.5rem 1.5rem 0rem 0rem;
-        }        
+        padding: 1.5rem 1.5rem 0rem 0rem;
+        @media (max-width: $desktop-width) {
+          //padding: 1.5rem 1.5rem 0rem 0rem;
+          width: 65%;
+        }
+        @media (max-width: $tablet-width) {
+          padding: 0.5rem;
+          width: 100%;
+        }              
       } 
     }
   }
