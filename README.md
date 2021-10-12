@@ -1,1 +1,1 @@
-# [CV Gricgorovich Tatyana](https://gtm003.github.io/CV/)
+# [CV Gricgorovich Tatyana](https://gtm003.github.io/cv/)
